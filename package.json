@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "moment": "^2.29.1"
+  },
+  "name": "odin-weather-app",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jacob-Lindsey/odin-weather-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jacob-Lindsey/odin-weather-app/issues"
+  },
+  "homepage": "https://github.com/Jacob-Lindsey/odin-weather-app#readme"
+}

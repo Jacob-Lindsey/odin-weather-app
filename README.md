@@ -1,1 +1,1 @@
-# odin-weather-app
+# Weather.ly
