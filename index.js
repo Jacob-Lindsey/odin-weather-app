@@ -34,9 +34,9 @@ function render(val) {
         let url;
 
         if (validateCity(location)) {
-            url = `http://api.openweathermap.org/data/2.5/forecast?q=${location}&appid=b6b6ee9abc69bd562fb3a83c69ee7518&units=${unitOfMeasurement}`;
+            url = `https://api.openweathermap.org/data/2.5/forecast?q=${location}&appid=b6b6ee9abc69bd562fb3a83c69ee7518&units=${unitOfMeasurement}`;
         } else if (validateZip(location)) {
-            url = `http://api.openweathermap.org/data/2.5/forecast?zip=${location}&appid=b6b6ee9abc69bd562fb3a83c69ee7518&units=${unitOfMeasurement}`;
+            url = `https://api.openweathermap.org/data/2.5/forecast?zip=${location}&appid=b6b6ee9abc69bd562fb3a83c69ee7518&units=${unitOfMeasurement}`;
         }
         
         (async function() {
