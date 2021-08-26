@@ -23,14 +23,6 @@ async function getData(url) {
 
 function clearData() {
     dataContainer.innerHTML = '';
-
-    /* city.textContent = '';
-    description.textContent = '';
-    temp.textContent = 'Temp: ';
-    humidity.textContent = 'Humidity: ';
-    feelsLike.textContent = 'Feels like: ';
-    sunrise.textContent = 'Sunrise: ';
-    sunset.textContent = 'Sunset: '; */
 }
 
 function render(val) {
@@ -90,16 +82,6 @@ function render(val) {
 
                 dataContainer.appendChild(card);
             });
-            /* city.textContent = data.name;
-            description.textContent = data.weather[0].description;
-            temp.textContent += ( data.main.temp + unitSymbol );
-            humidity.textContent += data.main.humidity + '%';
-            feelsLike.textContent += data.main.feels_like + unitSymbol;    
-            const sunriseUTC = new Date(data.sys.sunrise * 1000);
-            const sunsetUTC = new Date(data.sys.sunset * 1000);
-            sunrise.textContent += sunriseUTC.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
-            sunset.textContent += sunsetUTC.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
-            location = ''; */
         })();
 
         searchInput.value = '';
