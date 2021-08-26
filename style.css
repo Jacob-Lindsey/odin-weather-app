@@ -2,8 +2,24 @@ body {
     background: url(bg.jpg);
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
+    height: 100vh;
+    width: 100vw;
     margin: 0;
     padding: 0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #d9d9d9;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(85, 85, 85, 0.219) inset;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 button, header p {
@@ -48,6 +64,8 @@ header p span {
     height: 2.5rem;
     padding: 0.5% 0 0 1%;
     font-size: 1.3rem;
+    background-color: rgba(85, 85, 85, 0.219) !important;
+    color: #d9d9d9;
     border: none;
     border-bottom-left-radius: 6px;
     border-top-left-radius: 6px;
@@ -57,6 +75,7 @@ header p span {
 
 #location input:focus {
     outline: none;
+    background-color: rgba(85, 85, 85, 0.219);
 }
 
 #location button {
@@ -196,4 +215,62 @@ section {
 
 #description {
     text-transform: capitalize;
+}
+
+@media screen and (max-width: 480px) {
+    
+    body {
+        background-attachment: fixed;
+    }
+
+    header {
+        justify-content: space-evenly;
+    }
+
+    header p {
+        display: none;
+    }
+
+    #location {
+        width: 60%;
+    }
+
+    #location button {
+        display: none;
+    }
+
+    #unit-toggle {
+        width: 4rem;
+        height: 2.8rem;
+    }
+
+    .data {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        display: flex;
+        height: 5rem;
+        margin-bottom: 1%;
+        padding: 1%;
+    }
+
+    .card-date {
+        font-size: 1.3rem;
+    }
+
+    .temp {
+        flex: 1;
+        flex-flow: column wrap;
+    }
+
+    .temp img {
+        flex-grow: 3;
+    }
+
+    .temp div {
+        flex-grow: 0;
+        flex-shrink: 1;
+    }
 }
