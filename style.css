@@ -221,6 +221,7 @@ section {
     
     body {
         background-attachment: fixed;
+        overflow: hidden;
     }
 
     header {
